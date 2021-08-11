@@ -9,21 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./static/main.css">
-
-    <!-- Header scripts  -->
-    <script>
-      function resizeIframe(obj) {
-        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-      }
-    </script>
-
-    
 </head>
 <body>
     <!--
       Top Container, short bio + links  
     -->
-    
     <div id="top-container" class="container">
         <div class="row justify-content-center">
             <div class="headshot col-sm-12 col-md">
@@ -51,12 +41,12 @@
         <div class="nav-buttons container">
             <div class="row">
                 <a href="index.html">
-                    <div id="blog-button" class="button-dark">
+                    <div id="blog-button" class="button-light">
                         <p class="text-center">Posts</p>
                     </div>
                 </a>
                 <a href="about.html">
-                    <div id="about-button" class="button-light">
+                    <div id="about-button" class="button-dark">
                         <p class="text-center">About Me</p>
                     </div>
                 </a>
@@ -67,30 +57,37 @@
       Middle Container  
     -->
     <div id="middle-container" class="container">
-        <iframe src="./blog-posts/test.html"  frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-    
         <!--
-          Blog Posts  
+         About Section 
         -->
-        
-        <div class="blog-post container">
-            <a href="./blog-posts/test.html">
-               <h2>Fourier Transforms and change of basis</h2>
-               <p>Lorem Ipsum...</p>
-            </a>
-        </div>
-        <div class="blog-post container">
-           <h2>How to poorly manage a project</h2>
-           <p>Lorem Ipsum...</p>
-        </div>
-        <div class="blog-post container">
-           <h2>Fourier Transforms and change of basis</h2>
-           <p>Lorem Ipsum...</p>
-        </div>
-        <div class="blog-post container">
-           <h2>Fourier Transforms and change of basis</h2>
-           <p>Lorem Ipsum...</p>
-        </div>
+        <div id="about-me-container">
+            <div id="aboutMeContent">
+                <h2>About Me</h2>
+                <p>
+                    Hi! I am currently in my sophomore year at McGill university, pursuing a degree in Mathematics and Computer Science.
+                    I am generally interested in applied math, which spans from finance, to physics, to machine learning.
+                    For a distilled list of experience, here is my <a href="./CV.pdf">CV</a>.
+                </p>
+                <p>
+                    Right now I work in <a href="http://www.physics.mcgill.ca/~acliu/research.html">Dr. Adrian Liu’s</a> lab, 
+                    where we are trying to apply image segmentation algorithms to extract 
+                    foreground contaminants from 21cm cosmology observations.
+                    I was also working on tensor network optimization methods for detecting quantum entanglement with Dr. Gantumur Tsogtgerel at <a href="https://www.mcgill.ca/mathstat/">McGill University</a>.
+                </p>
+                <p>
+                    When I’m not doing research I like to write code (or pretty much anything) in vim, learn about design, 
+                    and explore various branches of applied math. This site is meant to document some of those findings.
+                </p>
+                <p>
+                    When I get tired of staring at a computer screen I like to read or go running.
+                    In extreme cases of screen overload I have also tree-planted in Northern Ontario, and hitchhiked around the Western Canadian Arctic.
+                </p>
+                <div class="text-center" style="padding: 6vw 4vw;">
+                <img src="./static/img/arctic-circle.jpg" class="img-fluid  mx-auto d-block" max-width="70%" id="arctic-circle" alt="">
+                Photo of me and my friend Gudrun who gave me a ride on the <a href="https://www.google.com/maps/place/Dempster+Hwy/@66.6890491,-136.6709425,6z/data=!4m5!3m4!1s0x5140e855ab3635c1:0x46adf85ac909e227!8m2!3d66.3114467!4d-136.6971585">Dempster Highway</a>.
+                </div>
+            </div>
+        </div> 
     </div>
 
 
