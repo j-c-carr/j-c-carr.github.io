@@ -1,6 +1,7 @@
 $("body").fadeIn("slow");
 var blogButton = document.getElementById("blog-button");
 var aboutButton = document.getElementById("about-button");
+$("#test-2").load("blog-posts/test-2.html")
 
 //blogButton.addEventListener("click", toggleMainSection(blogButton));
 //aboutButton.addEventListener("click", toggleMainSection(aboutButton));

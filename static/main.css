@@ -162,6 +162,11 @@ a, a:hover {
         justify-content: center;
     }
 
+    .blog-post, #about-me-container, .blog-post-container {
+        margin: 24px 0;
+        padding: 16px 0;
+    }
+
     #blog-button, #about-button {
         margin-right: 2vw;
         font-size: 18px;
