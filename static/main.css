@@ -139,7 +139,7 @@ a, a:hover {
 @media (max-width: 800px) {
     body {
         font-size: 14px;
-        margin: 0;
+        margin: 2%;
     }
 
     h1, h2 {

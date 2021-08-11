@@ -1,19 +1,37 @@
-$("body").fadeIn("slow");
+//$("body").fadeIn("slow");
 var blogButton = document.getElementById("blog-button");
 var aboutButton = document.getElementById("about-button");
-$("#test-2").load("blog-posts/test-2.html")
+var blogSection = document.getElementById("blog-section");
+var aboutSection = document.getElementById("about-section");
 
-//blogButton.addEventListener("click", toggleMainSection(blogButton));
-//aboutButton.addEventListener("click", toggleMainSection(aboutButton));
+$("#about-section").load("about-section.html")
+aboutSection.style.display = "none"; // default
+
+blogButton.addEventListener("click", postButtonPressed);
+aboutButton.addEventListener("click", aboutButtonPressed);
 
 // If dark-button selected, show the corresponding content
-function toggleButtonColor() {
+function aboutButtonPressed() {
 
-    console.log("changing button color...");
-    blogButton.classList.toggle("button-dark");
-    blogButton.classList.toggle("button-light");
-    aboutButton.classList.toggle("button-dark");
-    aboutButton.classList.toggle("button-light");
+    blogButton.classList.remove("button-dark");
+    blogButton.classList.add("button-light");
+    aboutButton.classList.remove("button-light");
+    aboutButton.classList.add("button-dark");
+
+    blogSection.style.display = "none";
+    $("#about-section").fadeIn("slow");
+}
+
+function postButtonPressed() {
+
+    console.log("changing post button color...");
+    aboutButton.classList.remove("button-dark");
+    aboutButton.classList.add("button-light");
+    blogButton.classList.remove("button-light");
+    blogButton.classList.add("button-dark");
+
+    aboutSection.style.display = "none";
+    $("#blog-section").fadeIn("slow");
 
 }
 

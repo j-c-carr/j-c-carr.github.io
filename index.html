@@ -42,16 +42,12 @@
         </div>
         <div class="nav-buttons container">
             <div class="row">
-                <a href="index.html">
-                    <div id="blog-button" class="button-dark">
-                        <p class="text-center">Posts</p>
-                    </div>
-                </a>
-                <a href="about.html">
+                <div id="blog-button" class="button-dark">
+                    <p class="text-center">Posts</p>
+                </div>
                     <div id="about-button" class="button-light">
                         <p class="text-center">About Me</p>
                     </div>
-                </a>
             </div>
         </div>
     </div>
@@ -59,31 +55,34 @@
       Middle Container  
     -->
     <div id="middle-container" class="container">
-        <iframe src="./blog-posts/test.html"  frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
     
         <!--
           Blog Posts  
         -->
-        
-        <div class="blog-post container">
-            <a href="./blog-posts/test.html">
+        <div id="blog-section">
+            <div class="blog-post container">
+                <a href="./blog-posts/test.html">
+                   <h2>Fourier Transforms and change of basis</h2>
+                   <p>Lorem Ipsum...</p>
+                </a>
+            </div>
+            <div class="blog-post container">
+               <h2>How to poorly manage a project</h2>
+               <p>Lorem Ipsum...</p>
+            </div>
+            <div class="blog-post container">
                <h2>Fourier Transforms and change of basis</h2>
                <p>Lorem Ipsum...</p>
-            </a>
+            </div>
+            <div class="blog-post container">
+               <h2>Fourier Transforms and change of basis</h2>
+               <p>Lorem Ipsum...</p>
+            </div>
         </div>
-        <div class="blog-post container">
-           <h2>How to poorly manage a project</h2>
-           <p>Lorem Ipsum...</p>
+
+        <!-- Loaded with JQuery -->
+        <div id="about-section">
         </div>
-        <div class="blog-post container">
-           <h2>Fourier Transforms and change of basis</h2>
-           <p>Lorem Ipsum...</p>
-        </div>
-        <div class="blog-post container">
-           <h2>Fourier Transforms and change of basis</h2>
-           <p>Lorem Ipsum...</p>
-        </div>
-        <div id="test-2"></div>
     </div>
 
 
