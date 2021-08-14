@@ -5,10 +5,13 @@ var blogSection = document.getElementById("blog-section");
 var aboutSection = document.getElementById("about-section");
 
 $("#about-section").load("about-section.html")
-aboutSection.style.display = "none"; // default
+blogSection.style.display = "none"; // default
 
 blogButton.addEventListener("click", postButtonPressed);
 aboutButton.addEventListener("click", aboutButtonPressed);
+
+blogButton.style.display = "none"; // default
+aboutButton.style.display = "none"; // default
 
 // If dark-button selected, show the corresponding content
 function aboutButtonPressed() {
