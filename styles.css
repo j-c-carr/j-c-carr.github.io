@@ -8,8 +8,16 @@ body {
 }
 
 #body-wrapper {
+  max-width: 800px;
   padding-left: 20%;
   padding-right: 20%;
+}
+#links {
+  padding-top: 2%;
+  text-align: right;
+}
+a {
+  color: #5cb25d;
 }
 
 .lora-light {
