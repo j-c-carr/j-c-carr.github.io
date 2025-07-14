@@ -1,6 +1,37 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+}
+#page-container {
+  position: relative;
+  min-height: 90vh;
+}
+
+#content-wrap {
+  padding-bottom: 4em; /* space for footer */
+}
+
 h1 {
     padding-left: 20%;
     font-size: 30px;
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.25rem;
+}
+h3 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+}
+
+#email-wrapper {
+  max-width: 800px;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #666;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+}
+
+#email-wrapper p {
+  margin: 0;
 }
 
 body {
@@ -20,111 +51,13 @@ a {
   color: #800080;
 }
 
-.lora-light {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.lora-med {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.ibm-plex-sans-condensed-thin {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+a.noFrills,
+a.noFrills:visited,
+a.noFrills:hover,
+a.noFrills:active,
+a.noFrills:focus {
+  color: inherit;       /* Use the surrounding text color */
+  text-decoration: none; /* Remove underline */
+  pointer-events: auto; /* Keeps it clickable; remove if you don't want it to behave like a link */
 }
 
-.ibm-plex-sans-condensed-extralight {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.ibm-plex-sans-condensed-light {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.ibm-plex-sans-condensed-regular {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ibm-plex-sans-condensed-medium {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ibm-plex-sans-condensed-semibold {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.ibm-plex sans condensed-bold {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ibm-plex sans condensed-thin-italic {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.ibm-plex sans condensed-extralight-italic {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.ibm-plex sans condensed-light-italic {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.ibm-plex sans condensed-regular-italic {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.ibm-plex sans condensed-medium-italic {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.ibm-plex sans condensed-semibold-italic {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.ibm-plex sans condensed-bold-italic {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.eb-garamond-light {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.eb-garamond-medium {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
